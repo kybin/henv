@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+if [ "$1" == "" ]; then
+	echo "please specify houdini version : ex)$0 13"
+	exit 0
+fi
+
+FINDSTR=/opt/hfs${1}\*
+HDIR=$(find ${FINDSTR} -maxdepth 0 -type d | sort -nr | head -1)
+
+# normal process
+cd $HDIR
+source houdini_setup
+cd $OLDPWD
