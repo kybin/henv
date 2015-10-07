@@ -1,16 +1,13 @@
-==== houdini environment linker ====
+henv
+====
 
-With this small util you can easily set houdini environmet, without go inside of houdini directory. Just move it to $PATH directory. then..
+small utility let you easily set houdini environmet.
 
-// You can do
-
+```bash
+# You can do
 source henv
-
-// or
-
+# or
 source henv 13
-
-
-// even
-
+# even
 source henv 12.5.582
+```
